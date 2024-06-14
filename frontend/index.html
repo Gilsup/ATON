@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Клиентская база</title>
+</head>
+<body>
+    <body>
+        <h1>Авторизация</h1>
+        <form id="loginForm">
+          <input placeholder="Логин" type="text" id="login" name="login" required>
+          <input placeholder="Пароль" type="password" id="password" name="password" required>
+          <button class="submitButton" type="submit">Войти</button>
+        </form>
+        <div id="error" style="color: red;"></div>
+        <div id="clientsTable" style="display: none;">
+          <h2 id="tableName">Клиенты</h2>
+          <table id="clients">
+            <thead>
+              <tr>
+                <th>Номер счета</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Дата рождения</th>
+                <th>ИНН</th>
+                <th>ФИО ответственного</th>
+                <th>Статус</th>
+                <th>Изменить статус</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
